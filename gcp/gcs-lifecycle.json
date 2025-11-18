@@ -1,0 +1,12 @@
+{
+"rule": [
+{
+"action": { "type": "SetStorageClass", "storageClass": "NEARLINE" },
+"condition": { "age": 90, "matchesPrefix": ["projects/"] }
+},
+{
+"action": { "type": "Delete" },
+"condition": { "age": 2555, "matchesPrefix": ["projects/"] }
+}
+]
+}
