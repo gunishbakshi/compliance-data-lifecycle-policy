@@ -1,0 +1,34 @@
+{
+"rules": [
+{
+"enabled": true,
+"name": "ComplianceProjectDocsLifecycle",
+"type": "Lifecycle",
+"definition": {
+"actions": {
+"baseBlob": {
+"tierToCool": {
+"daysAfterModificationGreaterThan": 90
+},
+"delete": {
+"daysAfterModificationGreaterThan": 2555
+}
+},
+"snapshot": {
+"delete": {
+"daysAfterCreationGreaterThan": 2555
+}
+}
+},
+"filters": {
+"prefixMatch": [
+"projects/"
+],
+"blobTypes": [
+"blockBlob"
+]
+}
+}
+}
+]
+}
