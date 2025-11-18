@@ -1,0 +1,19 @@
+# Ignore Terraform state and local files
+*.tfstate
+*.tfstate.*
+.terraform/
+
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+# IDE
+.vscode/
+.idea/
+
+
+# Secrets
+*.pem
+*.key
