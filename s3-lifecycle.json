@@ -1,0 +1,23 @@
+{
+"Rules": [
+{
+"ID": "ComplianceProjectDocsLifecycle",
+"Status": "Enabled",
+"Filter": {
+"Prefix": "projects/"
+},
+"Transitions": [
+{
+"Days": 90,
+"StorageClass": "STANDARD_IA"
+}
+],
+"Expiration": {
+"Days": 2555
+},
+"NoncurrentVersionExpiration": {
+"NoncurrentDays": 2555
+}
+}
+]
+}
